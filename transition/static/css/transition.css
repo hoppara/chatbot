@@ -1,0 +1,43 @@
+
+/* Default Styling */
+body {
+  background: rgb(7, 6, 70);
+  overflow-anchor: none;
+}
+
+.box {
+  background: #fff;
+  border-radius: 0px;
+  padding: 0px;
+/*  text-align: center;　*/
+  position: absolute;
+  z-index: 2;
+  top:0px;
+  left:0%;
+}
+
+.box2 {
+  background: #fff;
+  border-radius: 0px;
+  padding: 0px;
+/*  text-align: center;　*/
+  position: absolute;
+  z-index: 3;
+  top:0px;
+  left:8%;
+}
+
+.box3 {
+  background: #fff;
+  border-radius: 0px;
+  padding: 0px;
+  position: absolute;
+  z-index: 4;
+  top:95%;
+  left:95%;
+
+}
+
+  .douga {
+    z-index: 1;
+  }

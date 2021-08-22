@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>チャットボット試作品１号</title>
+</head>
+<body>
+
+<h2>チャットボットの試作品のサイトです。</h2>
+
+
+<script src="https://riversun.github.io/chatux/chatux.min.js"></script>
+<script>
+    const chatux = new ChatUx();
+
+    //ChatUXの初期化パラメータ
+ const initParam =
+        {
+            renderMode: 'auto',
+            api: {
+                //echo chat server
+                endpoint: 'http://127.0.0.1:8000/chatbot3/chatterbot/',
+                //method: 'GET',
+                //dataType: 'jsonp'
+                method: 'POST',
+                dataType: 'json'
+            },
+            bot: {
+                botPhoto: 'https://hoppara.github.io/image/robot.png',
+                humanPhoto: null,
+                widget: {
+                    sendLabel: '送信',
+                    placeHolder: '何か話しかけてみてください'
+                }
+            },
+            window: {
+                title: 'チャットボット試作品１号',
+                infoUrl: 'https://github.com/riversun/chatux'
+            }
+        };
+    chatux.init(initParam);
+    chatux.start(true);
+
+</script>
+</body>
+</html>
+
